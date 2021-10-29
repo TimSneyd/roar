@@ -1,0 +1,91 @@
+@media (min-width: 500px) {
+}
+
+header{
+	background-color: #252839;
+	min-height: 140px;
+	color: white;
+	position: auto;
+	font-size: xx-large;
+	padding-top: 20px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	position: center;
+	font-size: x-large;
+}
+p{
+	font-size: x-large;
+}
+h3{
+	color: #01fe87;
+	text-decoration: bold;
+}
+
+
+/*importing font and "poppins" by url*/
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*
+/*editing, formating the text in the box that will appear at the top of the page in animated style*/
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins', sans-serif;
+}
+body
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #252839;
+}
+hr{
+	color: #01fe87;
+}
+
+h2
+{
+	position: relative;
+	font-size: 4vw;
+	color: #252839;
+	-webkit-text-stroke: 0.3vw #383d52;
+	text-transform: uppercase;
+}
+/*positioning, style of the text, timeloop for animation and color*/
+h2::before
+{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #01fe87;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #01fe87;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 100%;
+	}
+	
+footer{
+	background-color: black;
+	min-height: 2000px;
+}
+
+@media (min-width: 500px) {
+	*/mobile first/*
+}
